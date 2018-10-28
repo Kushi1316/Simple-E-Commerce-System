@@ -9,10 +9,6 @@ class Database {
 
     private static $db;
 
-    function __construct($db) {
-        self::$db = $db;
-    }
-
     public function ProductListing($category_id = null, $sort_column = "last_update") {
         $db = self::$db;
 
